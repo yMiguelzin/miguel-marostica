@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meu Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho fixo com menu -->
+  <header>
+    <h1>👨‍💻 Miguel Marostica</h1>
+    <nav>
+      <button onclick="mostrar('inicio')">Início</button>
+      <button onclick="mostrar('sobre')">Sobre</button>
+      <button onclick="mostrar('formacao')">Formação</button>
+      <button onclick="mostrar('projetos')">Projetos</button>
+      <button onclick="mostrar('contato')">Contato</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Seção Início -->
+    <section id="inicio" class="visivel">
+      <h2>Bem-vindo ao meu portfólio!</h2>
+      <p>Este site foi desenvolvido com HTML, CSS e JavaScript puros. Aqui compartilho minha jornada, projetos e formas de contato.</p>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou Técnico de Desenvolvimento de Sistemas e atualmente estou cursando graduação em Análise e Desenvolvimento de Sistemas. Busco oportunidades na área, com foco em soluções robustas para ERP's e análise de dados. Minha paixão por tecnologia é movida pela curiosidade e pela busca de novos desafios. Acredito que o o trabalho em equipe é fundamental para criar soluções inovadoras e impactantes.</p>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ul>
+        <li><strong>Curso:</strong> [Nome do Curso]</li>
+        <li><strong>Instituição:</strong> [Nome da Faculdade]</li>
+        <li><strong>Idiomas:</strong> Português (nativo), Inglês (intermediário)</li>
+      </ul>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li>💻 Site de login com validação em JS</li>
+        <li>🎮 Jogo da velha com HTML/CSS/JS</li>
+        <li>📱 Layout responsivo para restaurante</li>
+      </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+      <h2>Fale Comigo</h2>
+      <form onsubmit="enviarMensagem(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Desenvolvido por Miguel Marostica</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

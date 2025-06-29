@@ -1,0 +1,83 @@
+/* Estilos básicos */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Cabeçalho fixo */
+header {
+  background-color: #009688;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+/* Menu de navegação como botões */
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+nav button:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Esconde todas as seções, exceto a ativa */
+section {
+  display: none;
+}
+section.visivel {
+  display: block;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 10px;
+}
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #00796b;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #009688;
+  color: white;
+  margin-top: 40px;
+}
